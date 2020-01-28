@@ -32,7 +32,7 @@
     "dom": ".zxxx_list li a"
   },
   "黑龙江": {
-    "url": "http://wsjkw.hlj.gov.cn/index.php/Home/Zwgk/all/typeid/42",
+    "url": "http://wsjkw.hlj.gov.cn/index.php/Home/Zwgk/all/typeid/42/",
     "dom": ".wenzhanglist ul li a"
   },
   "陕西": {
