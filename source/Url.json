@@ -2,5 +2,137 @@
   "北京": {
     "url": "http://wjw.beijing.gov.cn/wjwh/ztzl/xxgzbd/",
     "dom": ".weinei_left_con .weinei_left_con_line a"
+  },
+  "上海": {
+    "url": "http://wsjkw.sh.gov.cn/xwfb/index.html",
+    "dom": ".main-container .container .uli16 li a"
+  },
+  "天津": {
+    "url": "http://wsjk.tj.gov.cn/col/col87/index.html",
+    "dom": ".default_pgContainer li a"
+  },
+  "重庆": {
+    "url": "http://wsjkw.cq.gov.cn/yqxxyqtb/",
+    "dom": ".newslist ul li a"
+  },
+  "河北": {
+    "url": "http://www.hebwst.gov.cn/index.do?cid=326&templet=list",
+    "dom": ".sy_new_list a"
+  },
+  "山西": {
+    "url": "http://wjw.shanxi.gov.cn/wjywl02/index.hrh",
+    "dom": ".demo-right ul li a"
+  },
+  "吉林": {
+    "url": "http://www.jl.gov.cn/szfzt/jlzxd/yqtb/",
+    "dom": ".ty_list1 li a"
+  },
+  "辽宁": {
+    "url": "http://wsjk.ln.gov.cn/wst_zdzt/xxgzbd/yqtb/",
+    "dom": ".zxxx_list li a"
+  },
+  "黑龙江": {
+    "url": "http://wsjkw.hlj.gov.cn/index.php/Home/Zwgk/all/typeid/42",
+    "dom": ".wenzhanglist ul li a"
+  },
+  "陕西": {
+    "url": "http://sxwjw.shaanxi.gov.cn/col/col863/index.html",
+    "dom": ".default_pgContainer li a"
+  },
+  "甘肃": {
+    "url": "http://wsjk.gansu.gov.cn/channel/11218/index.html",
+    "dom": ".m_new_list_detail_list li a"
+  },
+  "青海": {
+    "url": "https://wsjkw.qinghai.gov.cn/ztbd/yqjk/yqtb/index.html",
+    "dom": ""
+  },
+  "山东": {
+    "url": "",
+    "dom": ""
+  },
+  "福建": {
+    "url": "",
+    "dom": ""
+  },
+  "浙江": {
+    "url": "",
+    "dom": ""
+  },
+  "河南": {
+    "url": "",
+    "dom": ""
+  },
+  "湖北": {
+    "url": "http://wjw.hubei.gov.cn/bmdt/ztzl/fkxxgzbdgrfyyq/xxfb/",
+    "dom": ".list-b li a"
+  },
+  "湖南": {
+    "url": "",
+    "dom": ""
+  },
+  "江西": {
+    "url": "",
+    "dom": ""
+  },
+  "江苏": {
+    "url": "",
+    "dom": ""
+  },
+  "安徽": {
+    "url": "",
+    "dom": ""
+  },
+  "广东": {
+    "url": "",
+    "dom": ""
+  },
+  "海南": {
+    "url": "",
+    "dom": ""
+  },
+  "四川": {
+    "url": "",
+    "dom": ""
+  },
+  "贵州": {
+    "url": "",
+    "dom": ""
+  },
+  "云南": {
+    "url": "",
+    "dom": ""
+  },
+  "台湾": {
+    "url": "",
+    "dom": ""
+  },
+  "内蒙古": {
+    "url": "",
+    "dom": ""
+  },
+  "新疆": {
+    "url": "",
+    "dom": ""
+  },
+  "宁夏": {
+    "url": "http://wsjkw.nx.gov.cn/yqfkdt/yqsd1.htm",
+    "dom": ".eamil_box ul li a"
+  },
+  "广西": {
+    "url": "",
+    "dom": ""
+  },
+  "西藏": {
+    "url": "",
+    "dom": ""
+  },
+  "香港": {
+    "url": "",
+    "dom": ""
+  },
+  "澳门": {
+    "url": "",
+    "dom": ""
   }
 }
