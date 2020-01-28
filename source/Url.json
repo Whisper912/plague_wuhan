@@ -1,4 +1,6 @@
 {
-  "北京": "http://wjw.beijing.gov.cn/wjwh/ztzl/xxgzbd/",
-  "上海":
+  "北京": {
+    "url": "http://wjw.beijing.gov.cn/wjwh/ztzl/xxgzbd/",
+    "dom": ".weinei_left_con .weinei_left_con_line a"
+  }
 }
