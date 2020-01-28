@@ -16,10 +16,12 @@ def getHref(url, dom):
     soup = BeautifulSoup(html, 'html.parser')
     # print(soup.prettify())
     href: str = parseDom(dom, soup)
-    if href[0] != '.':
-        return href
-    else:
+    if href[0] == '.':
         return url + href[2:len(href)]
+    elif href[0]=='/':
+        return url + href[1:len(href)]
+    else:
+        return href
 
 
 def findSubClass(sub_dom: str, dom_list: list, tag: Tag):
@@ -55,8 +57,8 @@ def parseDom(dom, soup):
 
 
 if __name__ == '__main__':
-    url = "http://wjw.beijing.gov.cn/wjwh/ztzl/xxgzbd/"
-    dom = ".weinei_left_con .weinei_left_con_line a"
+    url = "http://wsjkw.cq.gov.cn/yqxxyqtb/"
+    dom = ".newslist ul li a"
 
     href = getHref(url, dom)
     print(href)
