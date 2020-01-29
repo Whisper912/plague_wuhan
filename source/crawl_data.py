@@ -1,6 +1,7 @@
 from urllib import request
 from bs4 import BeautifulSoup, Tag
-
+import json
+import re
 
 def getHref(url, dom):
     """
@@ -9,12 +10,7 @@ def getHref(url, dom):
     :param dom: 待查找的dom
     :return: 文章链接
     """
-    user_agent = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0"
-    headers = {"User-Agent": user_agent}
-    req = request.Request(url, headers=headers)
-    resp = request.urlopen(req)
-    html = resp.read()
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = getSoup(url)
     href: str = parseDom(dom, soup)
 
     # 返回链接，对相对链接进行拼接处理
@@ -26,7 +22,6 @@ def getHref(url, dom):
         return url + href[1:len(href)]
     else:
         return url + href
-
 
 def findSubClass(sub_dom: str, dom_list: list, tag: Tag):
     """
@@ -40,7 +35,6 @@ def findSubClass(sub_dom: str, dom_list: list, tag: Tag):
     # 递归调用
     return processNext(dom_list, tag=tag)
 
-
 def findSubName(sub_dom: str, dom_list: list, tag: Tag):
     """
     按照class名查找子tag
@@ -52,7 +46,6 @@ def findSubName(sub_dom: str, dom_list: list, tag: Tag):
     tag = tag.findChild(name=sub_dom)
     # 递归调用
     return processNext(dom_list, tag=tag)
-
 
 def processNext(dom_list: list = None, tag=None):
     """
@@ -77,7 +70,6 @@ def processNext(dom_list: list = None, tag=None):
     else:
         return None
 
-
 def parseDom(dom, soup):
     """
     按照dom查找tag
@@ -89,10 +81,48 @@ def parseDom(dom, soup):
     tag = processNext(dom_list, tag=soup)
     return tag['href']
 
+class Result:
+    name = ''
+    total = 0
+    def __init__(self, name, total):
+        self.name = name
+        self.total = total
+
+def getSoup(url):
+    user_agent = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0"
+    headers = {"User-Agent": user_agent}
+    req = request.Request(url, headers=headers)
+    resp = request.urlopen(req)
+    soup = BeautifulSoup(resp.read(), 'html.parser')
+    return soup
+
+def removeTag(soup):
+    reg = re.compile('<[^>]*>')
+    content = reg.sub('', str(soup)).replace('\n', '').replace(' ', '')
+    return content
+
+def crawlData():
+    with open("Url.json", 'r', encoding='utf-8') as f:
+        temp = json.loads(f.read())
+    resultList=[]
+    for t in temp:
+        name = t['name']
+        url = t['url']
+        dom = t['dom']
+        latest_news_url = getHref(url, dom)
+        latest_news_soup = getSoup(latest_news_url)
+        content = removeTag(latest_news_soup)
+        strList = re.split('[，|,]', content)
+        for s in strList:
+            if (s.find('累计') != -1 and s.find('确诊') != -1):
+                total = re.findall(r"\d+", s)[0]
+                result = Result(name, total)
+                resultList.append(result)
+                break;
+    f=open('result.json','w')
+    f.write(json.dumps(resultList))
+    f.close()
+
 
 if __name__ == '__main__':
-    url = "http://www.hebwst.gov.cn/index.do?cid=326&templet=list"
-    dom = ".sy_new_list a"
-
-    href = getHref(url, dom)
-    print(href)
+    crawlData();
