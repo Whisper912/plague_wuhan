@@ -76,8 +76,8 @@
   },
   {
     "name": "河南",
-    "url": "http://www.hnwsjsw.gov.cn/utils/search.shtml?type=title&ChannelID=&word=%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E6%83%85%E5%86%B5",
-    "dom": ".fenye a"
+    "url": "http://www.hnwsjsw.gov.cn/api/stl/actions/search",
+    "dom": "a"
   },
   {
     "name": "湖北",
