@@ -1,0 +1,172 @@
+[
+  {
+    "name": "北京",
+    "url": "http://wjw.beijing.gov.cn/wjwh/ztzl/xxgzbd/gzbdyqtb/",
+    "dom": ".newsList1 a"
+  },
+  {
+    "name": "上海",
+    "url": "http://wsjkw.sh.gov.cn/yqtb/index.html",
+    "dom": ".main-container .container .uli16 li a"
+  },
+  {
+    "name": "天津",
+    "url": "http://wsjk.tj.gov.cn/col/col87/index.html",
+    "dom": ".Clear script"
+  },
+  {
+    "name": "重庆",
+    "url": "http://wsjkw.cq.gov.cn/yqxxyqtb/",
+    "dom": ".newslist ul li a"
+  },
+  {
+    "name": "河北",
+    "url": "http://www.hebwst.gov.cn/index.do?cid=326&templet=list",
+    "dom": ".sy_new_list a"
+  },
+  {
+    "name": "山西",
+    "url": "http://wjw.shanxi.gov.cn/wjywl02/index.hrh",
+    "dom": ".demo-right ul li a"
+  },
+  {
+    "name": "吉林",
+    "url": "http://www.jl.gov.cn/szfzt/jlzxd/yqtb/",
+    "dom": ".ty_list1 li a"
+  },
+  {
+    "name": "辽宁",
+    "url": "http://wsjk.ln.gov.cn/wst_zdzt/xxgzbd/yqtb/",
+    "dom": ".zxxx_list li a"
+  },
+  {
+    "name": "黑龙江",
+    "url": "http://wsjkw.hlj.gov.cn/index.php/Home/Zwgk/all/typeid/42",
+    "dom": ".wenzhanglist ul li a"
+  },
+  {
+    "name": "陕西",
+    "url": "http://sxwjw.shaanxi.gov.cn/col/col863/index.html",
+    "dom": ".column_position_list script"
+  },
+  {
+    "name": "甘肃",
+    "url": "http://wsjk.gansu.gov.cn/channel/11218/index.html",
+    "dom": ".m_new_list_detail_list li a"
+  },
+  {
+    "name": "青海",
+    "url": "https://wsjkw.qinghai.gov.cn/ztbd/yqjk/yqtb/index.html",
+    "dom": ".line01 a:nth-child(1)"
+  },
+  {
+    "name": "山东",
+    "url": "http://wsjkw.shandong.gov.cn/ztzl/rdzt/qlzhfkgz/tzgg/",
+    "dom": ".news-txtd .newsfld a"
+  },
+  {
+    "name": "福建",
+    "url": "http://wjw.fujian.gov.cn/ztzl/gzbufk/yqtb/",
+    "dom": ".xxgksublist a"
+  },
+  {
+    "name": "浙江",
+    "url": "http://www.zjwjw.gov.cn/col/col1202194/",
+    "dom": ".lm_r script"
+  },
+  {
+    "name": "河南",
+    "url": "http://www.hnwsjsw.gov.cn/utils/search.shtml?type=title&ChannelID=&word=%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E6%83%85%E5%86%B5",
+    "dom": ".fenye a"
+  },
+  {
+    "name": "湖北",
+    "url": "http://wjw.hubei.gov.cn/bmdt/ztzl/fkxxgzbdgrfyyq/xxfb/",
+    "dom": ".list-b li a"
+  },
+  {
+    "name": "湖南",
+    "url": "http://searching.hunan.gov.cn/hunan/123000000/news?q=%E7%96%AB%E6%83%85",
+    "dom": ".com-title  a"
+  },
+  {
+    "name": "江西",
+    "url": "http://hc.jiangxi.gov.cn/ztxx/xxgzbdgrdfyyqfk/xibd_gzdt/",
+    "dom": ".List_list  a"
+  },
+  {
+    "name": "江苏",
+    "url": "http://wjw.jiangsu.gov.cn/col/col7290/",
+    "dom": ".main-fr-box script"
+  },
+  {
+    "name": "安徽",
+    "url": "http://wjw.ah.gov.cn/news_list_477_1.html",
+    "dom": ".list  a"
+  },
+  {
+    "name": "广东",
+    "url": "http://wsjkw.gd.gov.cn/xxgzbdfk/yqtb/",
+    "dom": ".section  a"
+  },
+  {
+    "name": "海南",
+    "url": "http://wst.hainan.gov.cn/swjw/rdzt/yqfk/",
+    "dom": ".flfg_02  a"
+  },
+  {
+    "name": "四川",
+    "url": "http://wsjkw.sc.gov.cn/scwsjkw/gzbd01/ztwzlmgl.shtml",
+    "dom": ".wy_zt_ygzl ul li a"
+  },
+  {
+    "name": "贵州",
+    "url": "http://www.gzhfpc.gov.cn/ztzl_500663/xxgzbdgrdfyyqfk/yqdt/",
+    "dom": ".right_list li script"
+  },
+  {
+    "name": "云南",
+    "url": "http://ynswsjkw.yn.gov.cn/wjwWebsite/web/col?id=UU157976428326282067&cn=xxgzbd&pcn=ztlm&pid=UU145102906505319731",
+    "dom": ".vicepage_right ul li a"
+  },
+  {
+    "name": "台湾",
+    "url": "",
+    "dom": ""
+  },
+  {
+    "name": "内蒙古",
+    "url": "http://wjw.nmg.gov.cn/ztlm/2016n/xxgzbdgrdfyyqfk/yqtb/",
+    "dom": ".gjsz_lb_content ul li a"
+  },
+  {
+    "name": "新疆",
+    "url": "http://www.xjhfpc.gov.cn/tzgg_.htm",
+    "dom": ".winstyle1042 td a"
+  },
+  {
+    "name": "宁夏",
+    "url": "http://wsjkw.nx.gov.cn/yqfkdt/yqsd1.htm",
+    "dom": ".eamil_box ul li a"
+  },
+  {
+    "name": "广西",
+    "url": "http://wsjkw.gxzf.gov.cn/zhuantiqu/ncov/",
+    "dom": ".lxwmbox_newtxt ul li a"
+  },
+  {
+    "name": "西藏",
+    "url": "http://wjw.xizang.gov.cn/xwzx/wsjkdt/",
+    "dom": ".wrap2_mid ul li a"
+  },
+  {
+    "name": "香港",
+    "url": "",
+    "dom": ""
+  },
+  {
+    "name": "澳门",
+    "url": "",
+    "dom": ""
+  }
+]
